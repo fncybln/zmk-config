@@ -12,7 +12,7 @@
 
 / {
 
-    &led_strip { chain-length = <26>; };
+   
 
     macros {
         new_macro: new_macro {
@@ -25,6 +25,7 @@
 
     keymap {
         compatible = "zmk,keymap";
+        &led_strip { chain-length = <26>; };
 
         main {
             // -----------------------------------------------------------------------------------------
