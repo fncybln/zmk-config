@@ -25,7 +25,7 @@
 
     keymap {
         compatible = "zmk,keymap";
-        &led_strip { chain-length = <26>; };
+        
 
         main {
             // -----------------------------------------------------------------------------------------
@@ -38,7 +38,7 @@
   &kp ESCAPE  &kp DOUBLE_QUOTES  &kp COMMA  &kp PERIOD           &kp P  &kp Y    &kp F      &kp G          &kp C  &kp R  &kp L       &to 3
      &kp TAB              &kp A      &kp O       &kp E           &kp U  &kp I    &kp D      &kp H          &kp T  &kp N  &kp S   &kp ENTER
 &kp LEFT_ALT      &kp SEMICOLON      &kp Q       &kp J           &kp K  &kp X    &kp B      &kp M          &kp W  &kp V  &kp Z  &kp DELETE
-                                             &kp LCTRL  &kp LEFT_SHIFT  &to 2    &to 1  &kp SPACE  &kp BACKSPACE
+                                             &kp LCTRL  &kp LEFT_SHIFT  &to 2    &to 1  &kp SPACE  &kp BACKSPACE &led_strip { chain-length = <26>; };
             >;
 
             label = "Main Layer";
