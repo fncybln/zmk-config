@@ -12,6 +12,11 @@
 &led_strip {
     chain-length = <27>;
 };
+
+/ {
+    macros {
+        
+    };
     keymap {
         compatible = "zmk,keymap";
 
