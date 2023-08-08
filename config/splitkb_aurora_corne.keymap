@@ -64,7 +64,7 @@
         numbers {
         
             bindings = <
-&trans    &trans    &trans      &trans    &kp tilde     &none              &kp n7   &kp N8   &kp N9   &kp EQUAL  &kp N0     &to3wcol
+&trans    &trans    &trans      &trans    &kp TILDE     &none              &kp n7   &kp N8   &kp N9   &kp EQUAL  &kp N0     &to3wcol
 &trans    &none     &kp LBKT    &kp RBKT  &kp UP_ARROW  &kp TILDE    &kp n4   &kp n5   &kp n6   &kp MINUS  &kp RPAR   &trans
 &trans    &trans    &kp SLASH   &kp LEFT  &kp DOWN      &kp RIGHT    &kp n1   &kp n2   &kp n3   &kp BSLH   &kp F10    &trans
                                 &kp LGUI    &trans   &to0wcol                &trans    &n0     &trans
