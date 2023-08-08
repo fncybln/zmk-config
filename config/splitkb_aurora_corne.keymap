@@ -92,7 +92,7 @@
             bindings = <
 &trans           &trans           &trans           &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans  &to3wcol
 &trans       &bl BL_TOG     &bl BL_CYCLE           &trans  &trans    &trans    &trans  &trans  &trans  &trans  &trans    &trans
-&trans  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_COLOR_HSB(41,100,50)    &trans    &trans  &trans  &trans  &trans  &trans    &trans
+&trans  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_COLOR_HSB(29,100,49)    &trans    &trans  &trans  &trans  &trans  &trans    &trans
                                                    &trans  &trans  &to0wcol    &trans  &trans  &trans
             >;
         };
