@@ -12,9 +12,23 @@
 &led_strip {
     chain-length = <27>;
 };
-
+&sl {
+    release-after-ms = <2000>;
+};
 / {
     macros {
+    };
+
+    
+    
+    behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_0";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&sl 1>, <&to 1>;
+        };
     };
 
     keymap {
@@ -31,7 +45,7 @@
   &kp ESCAPE  &kp DOUBLE_QUOTES  &kp COMMA  &kp PERIOD           &kp P  &kp Y    &kp F      &kp G          &kp C  &kp R  &kp L  &kp LEFT_GUI
      &kp TAB              &kp A      &kp O       &kp E           &kp U  &kp I    &kp D      &kp H          &kp T  &kp N  &kp S     &kp ENTER
 &kp LEFT_ALT      &kp SEMICOLON      &kp Q       &kp J           &kp K  &kp X    &kp B      &kp M          &kp W  &kp V  &kp Z    &kp DELETE
-                                             &kp LCTRL  &kp LEFT_SHIFT  &to 2    &to 1  &kp SPACE  &kp BACKSPACE
+                                             &kp LCTRL  &kp LEFT_SHIFT  &to 2    &td0  &kp SPACE  &kp BACKSPACE
             >;
 
             label = "Main Layer";
