@@ -38,6 +38,15 @@
                 <&to 1>,
                 <&to 2>;
         };
+        td1: tap_dance_1 {
+            compatible = "zmk,behaior-tap-dance";
+            label = "TAP_1";
+            tapping-term-ms = <500>;
+            bindings =
+                <&mo 1>,
+                <&to 0>,
+                <&to 2>;
+        };
     };
 
     keymap {
