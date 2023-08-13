@@ -38,6 +38,16 @@
                 <&to 1>,
                 <&to 2>;
         };
+        td1: td1 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD1";
+            #binding-cells = <0>;
+            tapping-term-ms = <500>;
+            bindings =
+                <&mo 1>,
+                <&to 0>,
+                <&to 2>;
+        };
         td1: tap_dance_1 {
             compatible = "zmk,behaior-tap-dance";
             label = "TAP_0";
@@ -64,7 +74,7 @@
   &kp ESCAPE  &kp DOUBLE_QUOTES  &kp COMMA  &kp PERIOD           &kp P  &kp Y    &kp F      &kp G          &kp C  &kp R  &kp L  &kp LEFT_GUI
      &kp TAB              &kp A      &kp O       &kp E           &kp U  &kp I    &kp D      &kp H          &kp T  &kp N  &kp S     &kp ENTER
 &kp LEFT_ALT      &kp SEMICOLON      &kp Q       &kp J           &kp K  &kp X    &kp B      &kp M          &kp W  &kp V  &kp Z    &kp DELETE
-                                             &kp LCTRL  &kp LEFT_SHIFT  &td1     &td0  &kp SPACE  &kp BACKSPACE
+                                             &kp LCTRL  &kp LEFT_SHIFT   &td1     &td0  &kp SPACE  &kp BACKSPACE
             >;
 
             label = "Main Layer";
