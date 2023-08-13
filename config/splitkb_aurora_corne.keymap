@@ -54,11 +54,6 @@
         compatible = "zmk,keymap";
 
         main {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
   &kp ESCAPE  &kp DOUBLE_QUOTES  &kp COMMA  &kp PERIOD           &kp P  &kp Y    &kp F      &kp G          &kp C  &kp R  &kp L  &kp LEFT_GUI
@@ -82,12 +77,7 @@
         };
 
         raise_layer {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  7  |  8  |  9  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  4  |  5  |  6  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  1  |  2  |  3  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | 0 |
-
+         
             bindings = <
 &trans      &kp EXCL    &kp AT      &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR   &to 3
 &trans  &kp QUESTION    &trans  &kp UP_ARROW     &trans     &trans    &kp MINUS    &kp AT         &kp LBKT  &kp RBKT  &kp BSLH  &trans
