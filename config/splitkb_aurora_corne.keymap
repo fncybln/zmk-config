@@ -77,7 +77,7 @@
 
         numbers {
             bindings = <
- &to 0  &trans     &trans    &trans     &kp CARET      &none    &kp N7  &kp N8  &kp N9  &kp EQUAL    &kp N0   &to 3
+ &to 0  &trans     &trans    &trans     &kp CARET      &none    &kp N7  &kp N8  &kp N9  &kp EQUAL    &kp N0   &to 4
 &trans   &none   &kp LBKT  &kp RBKT  &kp UP_ARROW  &kp TILDE    &kp N4  &kp N5  &kp N6  &kp MINUS  &kp RPAR  &trans
 &trans  &trans  &kp SLASH  &kp LEFT      &kp DOWN  &kp RIGHT    &kp N1  &kp N2  &kp N3   &kp BSLH   &kp F10  &trans
                            &kp LGUI        &trans      &to 1     &to 2  &kp N0  &trans
@@ -86,6 +86,17 @@
             label = "Num US";
         };
 
+        symbols {
+
+            bindings = <
+ &to 0  &trans     &trans    &trans     &kp CARET      &none    &kp N7  &kp N8  &kp N9  &kp EQUAL    &kp N0   &to 4
+&trans   &none   &kp LBKT  &kp RBKT  &kp UP_ARROW  &kp TILDE    &kp N4  &kp N5  &kp N6  &kp MINUS  &kp RPAR  &trans
+&trans  &trans  &kp SLASH  &kp LEFT      &kp DOWN  &kp RIGHT    &kp N1  &kp N2  &kp N3   &kp BSLH   &kp F10  &trans
+                           &kp LGUI        &trans      &to 1     &to 2  &kp N0  &trans
+            >;
+
+            label = "Sym US";
+        };
         raise_layer {
             bindings = <
 &kp C_AL_TASK_MANAGER  &none  &none   &none          &none   &none    &kp F7  &kp F8  &kp F9   &kp F10   &kp F11     &kp F12
