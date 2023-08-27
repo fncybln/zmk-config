@@ -13,6 +13,9 @@
 &led_strip {
     chain-length = <27>;
 };
+&nice_view_spi {
+    cs-gpios = <&gpio1 1 GPIO_ACTIVE_HIGH>;
+}
 
 &sl {
     release-after-ms = <2000>;
