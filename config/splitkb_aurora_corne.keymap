@@ -20,35 +20,9 @@
 
 / {
     macros {
-        to0withspace: to0withspace {
-            compatible = "zmk,behavior-macro";
-            label = "TO0WITHSPACE";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE &to 0>;
-        };
     };
 
     behaviors {
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_0";
-            #binding-cells = <0>;
-            tapping-term-ms = <500>;
-            bindings =
-                <&mo 1>,
-                <&to 1>,
-                <&to 2>;
-        };
-        td1: td1 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD1";
-            #binding-cells = <0>;
-            tapping-term-ms = <500>;
-            bindings =
-                <&mo 1>,
-                <&to 0>,
-                <&to 2>;
-        };
         contrl_tap: contrl_tap {
             compatible = "zmk,behavior-tap-dance";
             label = "CONTRL_TAP";
@@ -58,6 +32,25 @@
                 <&kp LEFT_CONTROL>,
                 <&kp LEFT_ALT>,
                 <&kp LA(LEFT_CONTROL)>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        tomain {
+            bindings = <&to 0>;
+            key-positions = <38 39>;
+        };
+
+        tonumbers {
+            bindings = <&to 1>;
+            key-positions = <39 37>;
+        };
+
+        toF {
+            bindings = <&to 3>;
+            key-positions = <39 36>;
         };
     };
 
@@ -77,10 +70,10 @@
 
         numbers {
             bindings = <
- &to 0  &trans     &trans    &trans     &kp CARET      &none    &kp N7  &kp N8  &kp N9  &kp EQUAL    &kp N0  &kp LEFT_WIN
-&trans   &none   &kp LBKT  &kp RBKT  &kp UP_ARROW  &kp GRAVE    &kp N4  &kp N5  &kp N6  &kp MINUS  &kp RPAR        &trans
-&trans  &trans  &kp SLASH  &kp LEFT      &kp DOWN  &kp RIGHT    &kp N1  &kp N2  &kp N3   &kp BSLH   &kp F10        &trans
-                              &to 4        &trans      &to 1     &to 2  &kp N0  &trans
+&kp ESC  &trans     &trans    &trans     &kp CARET      &none    &kp N7  &kp N8  &kp N9  &kp EQUAL    &kp N0  &kp LEFT_WIN
+ &trans   &none   &kp LBKT  &kp RBKT  &kp UP_ARROW  &kp GRAVE    &kp N4  &kp N5  &kp N6  &kp MINUS  &kp RPAR        &trans
+ &trans  &trans  &kp SLASH  &kp LEFT      &kp DOWN  &kp RIGHT    &kp N1  &kp N2  &kp N3   &kp BSLH   &kp F10        &trans
+                               &none        &trans      &none     &none  &kp N0  &trans
             >;
 
             label = "Num US";
@@ -88,10 +81,10 @@
 
         symbols {
             bindings = <
- &to 0  &trans         &trans        &trans         &kp CARET          &none    &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(EQUAL)  &none   &to 4
-&trans   &none   &kp LS(LBKT)  &kp LS(RBKT)  &kp LC(UP_ARROW)      &kp TILDE    &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &kp LS(MINUS)  &none  &trans
-&trans  &trans  &kp LS(SLASH)  &kp LC(LEFT)      &kp LC(DOWN)  &kp LC(RIGHT)    &kp LS(N1)  &kp LS(N2)  &kp LS(N3)   &kp LS(BSLH)  &none  &trans
-                                   &kp LGUI            &trans          &to 1         &to 2  &kp LS(N0)      &trans
+&kp ESC  &trans         &trans        &trans         &kp CARET          &none    &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(EQUAL)  &none   &to 4
+ &trans   &none   &kp LS(LBKT)  &kp LS(RBKT)  &kp LC(UP_ARROW)      &kp TILDE    &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &kp LS(MINUS)  &none  &trans
+ &trans  &trans  &kp LS(SLASH)  &kp LC(LEFT)      &kp LC(DOWN)  &kp LC(RIGHT)    &kp LS(N1)  &kp LS(N2)  &kp LS(N3)   &kp LS(BSLH)  &none  &trans
+                                    &kp LGUI            &trans          &none         &none  &kp LS(N0)      &trans
             >;
 
             label = "Sym US";
@@ -102,7 +95,7 @@
 &kp C_AL_TASK_MANAGER  &none  &none   &none          &none   &none    &kp F7  &kp F8  &kp F9   &kp F10   &kp F11     &kp F12
                &trans  &none  &none   &none  &kp PAGE_DOWN  &trans    &kp F4  &kp F5  &kp F6  &kp RBKT  &kp BSLH      &trans
                &trans  &none  &none   &none  &kp PAGE_DOWN  &trans    &kp F1  &kp F2  &kp F3  &kp RBRC  &kp PIPE  &kp INSERT
-                                     &trans         &trans   &to 0    &trans  &trans  &trans
+                                     &trans         &trans   &none     &none  &trans  &trans
             >;
 
             label = "F | US";
