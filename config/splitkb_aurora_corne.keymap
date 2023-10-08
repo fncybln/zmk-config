@@ -86,9 +86,9 @@
 
         symbols {
             bindings = <
-&kp ESC  &trans                 &trans         &trans         &kp CARET          &none    &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(EQUAL)  &kp C_PLAY_PAUSE   &to 4
+&kp ESC  &trans                 &trans         &trans         &kp CARET          &none    &kp LS(N7)  &kp LS(N8)  &kp LS(N9)  &kp LS(EQUAL)  &kp C_VOL_UP   &to 4
  &trans   &none           &kp LS(LBKT)  &kp LS(SLASH)  &kp LC(UP_ARROW)      &kp TILDE    &kp LS(N4)  &kp LS(N5)  &kp LS(N6)  &kp LS(MINUS)        &kp C_MUTE  &trans
- &trans  &trans  &kp LS(RIGHT_BRACKET)   &kp LC(LEFT)      &kp LC(DOWN)  &kp LC(RIGHT)    &kp LS(N1)  &kp LS(N2)  &kp LS(N3)   &kp LS(BSLH)       &kp C_POWER  &trans
+ &trans  &trans  &kp LS(RIGHT_BRACKET)   &kp LC(LEFT)      &kp LC(DOWN)  &kp LC(RIGHT)    &kp LS(N1)  &kp LS(N2)  &kp LS(N3)   &kp LS(BSLH)       &kp C_VOL_DN  &trans
                                              &kp LGUI            &trans          &none         &none  &kp LS(N0)      &trans
             >;
 
